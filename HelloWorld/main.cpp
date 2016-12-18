@@ -16,17 +16,21 @@
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
-    cout << "Hello Crazy and Cruel World\n";
+void printArguments(int argc, char** argv){
     for (int i=1; i<argc; i++) {
         cout << "Parameter " << i << " is : " << argv[i] << "\n";
     }
     if (argc < 2) {
         cout << "** No Parameters given **";
     }
+}
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    cout << "Hello Crazy and Cruel World\n";
+    printArguments(argc, argv);
     return 0;
 }
 
