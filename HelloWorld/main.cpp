@@ -20,7 +20,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    cout << "Hello World\n";
+    cout << "Hello Cruel World\n";
     for (int i=1; i<argc; i++) {
         cout << "Parameter " << i << " is : " << argv[i] << "\n";
     }
